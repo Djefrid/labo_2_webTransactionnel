@@ -62,6 +62,8 @@ function afficherPagination(publications) {
       ellipsisButton.classList.add("btn", "btn-pagination", "mx-1 bg-gray"); // Ajouter la classe CSS personnalisée
       ellipsisButton.style.borderRadius = "20px";
       ellipsisButton.style.fontWeight = "bold";
+      ellipsisButton.style.color = "white";
+      ellipsisButton.style.backgroundColor = "#1645b1";
       paginationContainer.appendChild(ellipsisButton);
     }
   }

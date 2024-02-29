@@ -41,7 +41,7 @@ function afficherPagination(publications) {
 
   // Afficher les boutons de pagination numérotés
   for (let i = 1; i <= totalPages; i++) {
-    if (i <= 3 || i >= currentPage - 1 && i <= currentPage + 1 || i > totalPages - 2) {
+    if (totalPages <= 3 || totalPages >= currentPage - 1 && totalPages <= currentPage + 1 || totalPages > totalPages - 2) {
       const button = document.createElement("button");
       button.innerText = i;
       button.classList.add("btn", "btn-pagination", "mx-1"); // Ajouter la classe CSS personnalisée
@@ -54,7 +54,7 @@ function afficherPagination(publications) {
         afficherPublicationsSurPage(currentPage, publications);
       });
       paginationContainer.appendChild(button);
-    } else if (i === 4) {
+    } else if (totalPages === 4) {
       // Ajouter un bouton "..." si nécessaire
       const ellipsisButton = document.createElement("button");
       ellipsisButton.innerText = "...";

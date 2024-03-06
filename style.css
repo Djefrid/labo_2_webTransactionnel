@@ -56,7 +56,7 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #4E4A49;
+  background-color: #222831;
   color: white;
   width: 100%;
 }
@@ -84,7 +84,7 @@ footer img {
 .body {
   margin: 5px;
   padding: 20px;
-  background-color: rgba(42, 136, 224, 0.2470588235);
+  background-color: #EEEEEE;
 }
 
 .banner {
@@ -109,7 +109,8 @@ footer img {
 }
 
 .navbar-expand-md {
-  background-color: #4E4A49;
+  background-color: #222831;
+  color: #EEEEEE;
 }
 
 .img, .logo {
@@ -136,13 +137,26 @@ footer img {
 #formulairePublication {
   margin: 10px;
   padding: 10px;
-  background-color: #4E4A49;
+  background-color: #393E46;
   color: white;
 }
 
 #pagination {
   margin: 10px;
   padding: 10px;
+}
+
+.carteblog, #dropdownMenuButton1 {
+  background-color: #393E46;
+}
+
+.nav-item {
+  color: #EEEEEE;
+}
+
+#search {
+  background-color: #00ADB5;
+  color: #EEEEEE;
 }
 
 /*# sourceMappingURL=style.css.map */

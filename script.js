@@ -28,8 +28,8 @@ function afficherPagination(publications) {
   previousButton.classList.add("btn", "btn-pagination", "mx-1"); // Ajouter la classe CSS personnalisée
   previousButton.style.borderRadius = "20px"; // Appliquer la bordure arrondie au bouton
   previousButton.style.fontWeight = "bold"; // Appliquer le texte en gras au bouton
-  previousButton.style.backgroundColor = "#1645b1"; // Appliquer une couleur de fond transparente au bouton
-  previousButton.style.color = "white"; // Appliquer la couleur du texte au bouton
+  previousButton.style.backgroundColor = "#00ADB5"; // Appliquer une couleur de fond transparente au bouton
+  previousButton.style.color = "#EEEEEE"; // Appliquer la couleur du texte au bouton
   previousButton.addEventListener("click", function () {
     if (currentPage > 1) {
       currentPage--;
@@ -47,8 +47,8 @@ function afficherPagination(publications) {
       button.classList.add("btn", "btn-pagination", "mx-1"); // Ajouter la classe CSS personnalisée
       button.style.borderRadius = "20px"; // Appliquer la bordure arrondie au bouton
       button.style.fontWeight = "bold"; // Appliquer le texte en gras au bouton
-      button.style.backgroundColor = "#1645b1 "; // Appliquer une couleur de fond transparente au bouton
-      button.style.color = "white";
+      button.style.backgroundColor = "#00ADB5 "; // Appliquer une couleur de fond transparente au bouton
+      button.style.color = "#EEEEEE";
       button.addEventListener("click", function () {
         currentPage = i;
         afficherPublicationsSurPage(currentPage, publications);
@@ -62,8 +62,8 @@ function afficherPagination(publications) {
       ellipsisButton.classList.add("btn", "btn-pagination", "mx-1 bg-gray"); // Ajouter la classe CSS personnalisée
       ellipsisButton.style.borderRadius = "20px";
       ellipsisButton.style.fontWeight = "bold";
-      ellipsisButton.style.color = "white";
-      ellipsisButton.style.backgroundColor = "#1645b1";
+      ellipsisButton.style.color = "#EEEEEE";
+      ellipsisButton.style.backgroundColor = "#00ADB5";
       paginationContainer.appendChild(ellipsisButton);
     }
   }
@@ -74,8 +74,8 @@ function afficherPagination(publications) {
   nextButton.classList.add("btn", "btn-pagination", "mx-1"); // Ajouter la classe CSS personnalisée
   nextButton.style.borderRadius = "20px"; // Appliquer la bordure arrondie au bouton
   nextButton.style.fontWeight = "bold"; // Appliquer le texte en gras au bouton
-  nextButton.style.backgroundColor = "#1645b1"; // Appliquer une couleur de fond transparente au bouton
-  nextButton.style.color = "white";
+  nextButton.style.backgroundColor = "#00ADB5"; // Appliquer une couleur de fond transparente au bouton
+  nextButton.style.color = "#EEEEEE";
   nextButton.addEventListener("click", function () {
     if (currentPage < totalPages) {
       currentPage++;
@@ -113,7 +113,7 @@ function remplirePublication(listPublication) {
                         <div class="row">
                             <div class="card rounded-4 border border-3 border-secondary hover-zoom mx-auto">
                                 <img class="card-img-top image" src="paysage.jpg" alt="Card image cap">
-                                <div class="fs-4 p-3 mb-2 bg-secondary text-white card-title" id="titre">${publication.Titre}</div>
+                                <div class="fs-4 p-3 mb-2 text-white card-title carteblog" id="titre">${publication.Titre}</div>
                                 <div class="card-body">
                                     <p class="card-text contenue">${publication.Contenu}</p>
                                 </div>

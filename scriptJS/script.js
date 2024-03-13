@@ -112,7 +112,7 @@ function remplirePublication(listPublication) {
                     <a class="text-decoration-none" href="index.html?id=${publication.id}">
                         <div class="row">
                             <div class="card rounded-4 border border-3 border-secondary hover-zoom mx-auto">
-                                <img class="card-img-top image" src="paysage.jpg" alt="Card image cap">
+                                <img class="card-img-top image" src="../images/paysage.jpg" alt="Card image cap">
                                 <div class="fs-4 p-3 mb-2 text-white card-title carteblog" id="titre">${publication.Titre}</div>
                                 <div class="card-body">
                                     <p class="card-text contenue">${publication.Contenu}</p>

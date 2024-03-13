@@ -60,7 +60,7 @@ function envoyerPublication(publication) {
             console.log('Publication ajoutée avec succès :', data);
             //alert('Publication ajoutée avec succès !');
             // Redirection vers la page principale
-            window.location.href = 'acceiul.html';
+            window.location.href = '../htmlPages/acceiul.html';
         })
         .catch(error => console.error('Erreur lors de l\'ajout de la publication :', error));
 }
